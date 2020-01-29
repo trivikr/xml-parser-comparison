@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/trivikr/xml-parser-comparison/issues"
   },
-  "homepage": "https://github.com/trivikr/xml-parser-comparison#readme"
+  "homepage": "https://github.com/trivikr/xml-parser-comparison#readme",
+  "dependencies": {
+    "pixl-xml": "^1.0.13"
+  }
 }
