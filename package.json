@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/trivikr/xml-parser-comparison#readme",
   "dependencies": {
+    "fast-xml-parser": "^3.16.0",
     "pixl-xml": "^1.0.13"
   }
 }
