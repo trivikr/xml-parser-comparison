@@ -11,6 +11,8 @@ const { readFileSync } = require("fs");
       const xmlData = caseItem.response.body;
       const pixlParsedObj = pixlXml.parse(xmlData);
       const fxpParsedObj = fastXmlParser.parse(xmlData, {
+        attributeNamePrefix: "",
+        ignoreAttributes: false,
         parseNodeValue: false
       });
       console.log(
