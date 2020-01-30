@@ -6,4 +6,4 @@ Repo for comparing XML parsers
 
 - Run `yarn` to install dependencies
 - Run `node parseTest.js`
-- This parses [`example.xml`](./example.xml) and prints it
+- This parses protocol XML files from fixtures and compares output returned by pixl-xml and fast-xml-parser
