@@ -1,5 +1,5 @@
 <OperationNameResponse
-	xmlns=\"https://service.amazonaws.com/doc/2010-05-08/\">
+	xmlns="https://service.amazonaws.com/doc/2010-05-08/">
 	<OperationNameResult>
 		<List>
 			<member>

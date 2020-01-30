@@ -13,7 +13,11 @@ const pixlParsedObj = pixlXml.parse(xmlData);
 console.log(printObject(pixlParsedObj));
 
 console.log("\nParsed by fast-xml-parser:");
-const fxpParsedObj = fastXmlParser.parse(xmlData);
+const fxpParsedObj = fastXmlParser.parse(xmlData, {
+  attributeNamePrefix: "",
+  ignoreAttributes: false,
+  parseNodeValue: false
+});
 console.log(printObject(fxpParsedObj[Object.keys(fxpParsedObj)[0]]));
 
 console.log(
