@@ -9,7 +9,14 @@ const printObject = data =>
   prettier.format(JSON.stringify(data), { parser: "json" });
 
 console.log("Parsed by pixl-xml:");
-console.log(printObject(pixlXml.parse(xmlData)));
+const pixlParsedObj = pixlXml.parse(xmlData);
+console.log(printObject(pixlParsedObj));
 
 console.log("\nParsed by fast-xml-parser:");
-console.log(printObject(fastXmlParser.parse(xmlData)));
+const fxpParsedObj = fastXmlParser.parse(xmlData);
+console.log(printObject(fxpParsedObj[Object.keys(fxpParsedObj)[0]]));
+
+console.log(
+  JSON.stringify(pixlParsedObj) ===
+    JSON.stringify(fxpParsedObj[Object.keys(fxpParsedObj)[0]])
+);

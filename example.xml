@@ -1,5 +1,20 @@
-<?xml version="1.0"?>
-<Document>
-	<Simple>Hello</Simple>
-	<Node Key="Value">Complex</Node>
-</Document>
+<OperationNameResponse
+	xmlns=\"https://service.amazonaws.com/doc/2010-05-08/\">
+	<OperationNameResult>
+		<List>
+			<member>
+				<Foo>firstfoo</Foo>
+				<Bar>firstbar</Bar>
+				<Baz>firstbaz</Baz>
+			</member>
+			<member>
+				<Foo>secondfoo</Foo>
+				<Bar>secondbar</Bar>
+				<Baz>secondbaz</Baz>
+			</member>
+		</List>
+	</OperationNameResult>
+	<ResponseMetadata>
+		<RequestId>requestid</RequestId>
+	</ResponseMetadata>
+</OperationNameResponse>
